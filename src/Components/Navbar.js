@@ -31,10 +31,12 @@ const NavbarStyle = styled.div`
   width: 100%;
   height: 10%;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
   li {
     display: inline;
     list-style: none;
-    margin-right: 20px;
+    margin-right: 75px;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
     &:hover {
