@@ -50,6 +50,21 @@ const MainHomeStyled = styled.div`
     margin: 0px;
     z-index: 1;
     line-height: 200px;
+    @media (max-width: 1768px) {
+      font-size: 12em;
+    }
+    @media (max-width: 1568px) {
+      font-size: 10em;
+    }
+    @media (max-width: 1268px) {
+      font-size: 8em;
+    }
+    @media (max-width: 1068px) {
+      font-size: 5em;
+    }
+    @media (max-width: 500px) {
+      font-size: 3em;
+    }
   }
 
   img {
@@ -58,20 +73,30 @@ const MainHomeStyled = styled.div`
     position: absolute;
     top: 10%;
     right: 30%;
-  }
-
-  @media (max-width: 768px) {
-    h2 {
-      font-size: 3em;
-    }
-    h1 {
-      font-size: 8em;
-    }
-    img {
+    @media (max-width: 1768px) {
       width: 350px;
-      top: 15%;
-      right: 15%;
-      transform: rotate(0deg);
+      top: 25%;
+      right: 30%;
+    }
+    @media (max-width: 1568px) {
+      width: 300px;
+      top: 35%;
+      right: 30%;
+    }
+    @media (max-width: 1268px) {
+      width: 300px;
+      top: 35%;
+      right: 30%;
+    }
+    @media (max-width: 1068px) {
+      width: 300px;
+      top: 35%;
+      right: 25%;
+    }
+    @media (max-width: 500px) {
+      width: 150px;
+      top: 45%;
+      right: 20%;
     }
   }
 `;
@@ -84,8 +109,8 @@ const InBox = styled.div`
   }
 `;
 
-const Homebutton = styled.button`
-  margin-top: 2%;
+export const Homebutton = styled.button`
+  margin: 5% 0%;
   border-radius: 2em;
   background-color: red;
   color: white;

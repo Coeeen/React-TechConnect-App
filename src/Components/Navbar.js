@@ -31,8 +31,10 @@ const NavbarStyle = styled.div`
   width: 100%;
   height: 10%;
   justify-content: space-between;
-  position: sticky;
+  /* position: sticky;
   top: 0;
+  z-index: 10; */
+  color: rgba(0, 0, 0, 0.9);
   li {
     display: inline;
     list-style: none;
@@ -49,6 +51,10 @@ const LogoName = styled.h1`
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: 8px;
   cursor: pointer;
+  @media (max-width: 568px) {
+    font-size: 15px;
+    letter-spacing: 4px;
+  }
 `;
 const LoginNavbarDiv = styled.div`
   display: flex;
@@ -57,7 +63,7 @@ const LoginNavbarDiv = styled.div`
 
 const NavbarButtons = styled.button`
   cursor: pointer;
-  background-color: white;
+  background-color: transparent;
   padding: 10px;
   width: 100px;
   height: 35px;
