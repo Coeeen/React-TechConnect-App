@@ -1,6 +1,6 @@
 import React from "react";
-import SmallDeviceHome from "./SmallDeviceHome";
-import Earphones from "../img/Earphones1.png";
+// import SmallDeviceHome from "./SmallDeviceHome";
+// import Earphones from "../img/Earphones1.png";
 function DeviceList() {
   return (
     <div>

@@ -5,11 +5,12 @@ import { Homebutton } from "../Components/MainHome";
 function DeviceHome(props) {
   return (
     <DeviceHomeStyle>
-      <h3>{props.text}</h3>
-      <h2>{props.type}</h2>
+      <StyledHeading>{props.text}</StyledHeading>
+      <StyledSubHeading>{props.type}</StyledSubHeading>
+
+      <StyledTitle>{props.device}</StyledTitle>
+      <CustomHomebutton>Browse</CustomHomebutton>
       <img src={props.picture} alt="Earphones" />
-      <h1>{props.device}</h1>
-      <Homebutton>Browse</Homebutton>
     </DeviceHomeStyle>
   );
 }
@@ -19,43 +20,40 @@ export default DeviceHome;
 const DeviceHomeStyle = styled.div`
   display: flex;
   flex-direction: column;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    125deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(77, 77, 77, 1) 100%
-  );
-  color: white;
-  width: 350px;
-  border-radius: 2em;
-  margin-top: 100px;
   position: relative;
+  background-color: black;
+  width: 20vw;
+  color: white;
+  border-radius: 2em;
 
   img {
-    width: 300px;
+    width: 325px;
     position: absolute;
+    top: 5px;
+    left: 100px;
     rotate: calc(-15deg);
-    top: -15px;
-    right: -100px;
   }
+`;
+const CustomHomebutton = styled(Homebutton)`
+  width: 150px;
+  margin-left: 50px;
+`;
 
-  h3 {
-    font-size: 1em;
-    font-weight: 600;
-    margin: 10px 0 5px 30px;
-  }
+const StyledHeading = styled.h3`
+  margin-left: 50px;
+  font-size: 2em;
+  line-height: 10px;
+`;
 
-  h2 {
-    font-size: 2em;
-    font-weight: 700;
-    margin: 10px 0 5px 30px;
-  }
+const StyledSubHeading = styled.h2`
+  margin-left: 50px;
+  font-size: 3em;
+  line-height: 20px;
+`;
 
-  h1 {
-    font-size: 5em;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 5px 30px;
-    z-index: 1;
-  }
+const StyledTitle = styled.h1`
+  margin-left: 50px;
+  line-height: 20px;
+  font-size: 3.5em;
+  z-index: 2;
 `;
