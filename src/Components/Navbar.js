@@ -1,8 +1,15 @@
 import React from "react";
 import styled from "styled-components";
-// import { Link } from "react-router-dom";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+
 function Navbar() {
+  const handleScrollToSummerSale = () => {
+    const summerSaleSection = document.getElementById("summerSale");
+    if (summerSaleSection) {
+      summerSaleSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <NavbarStyle>
       <LogoName>TECHCONNECT</LogoName>
@@ -10,7 +17,11 @@ function Navbar() {
         <ul>
           <li>Home</li>
           <li>Shop</li>
-          <li>Summer Sale</li>
+          <li>
+            <a href="#" onClick={handleScrollToSummerSale}>
+              Summer Sale
+            </a>
+          </li>
           <li>Popular Products</li>
         </ul>
       </div>
@@ -31,31 +42,37 @@ const NavbarStyle = styled.div`
   width: 100%;
   height: 10%;
   justify-content: space-between;
-  /* position: sticky;
-  top: 0;
-  z-index: 10; */
   color: rgba(0, 0, 0, 0.9);
+
   li {
     display: inline;
     list-style: none;
     margin-right: 75px;
     color: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+
     &:hover {
       color: black;
     }
+
+    a {
+      text-decoration: none;
+    }
   }
 `;
+
 const LogoName = styled.h1`
   font-size: 20px;
   font-family: "Chakra Petch", sans-serif;
   letter-spacing: 8px;
   cursor: pointer;
+
   @media (max-width: 568px) {
     font-size: 15px;
     letter-spacing: 4px;
   }
 `;
+
 const LoginNavbarDiv = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -72,6 +89,7 @@ const NavbarButtons = styled.button`
   font-size: 15px;
   margin-right: 10px;
   color: rgba(0, 0, 0, 0.5);
+
   &:hover {
     color: black;
   }

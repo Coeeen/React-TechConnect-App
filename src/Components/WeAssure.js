@@ -43,6 +43,7 @@ export default WeAssure;
 const WeAssureStyle = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 `;
 const StyledObject = styled.div`
   margin: 2% 3%;

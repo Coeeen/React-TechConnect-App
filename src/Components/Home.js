@@ -4,6 +4,7 @@ import MainHome from "./MainHome";
 import DeviceList from "./DeviceList";
 import WeAssure from "./WeAssure";
 import SummerSale from "./SummerSale";
+import BestSellersList from "./BestSellersList";
 function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Home() {
       <DeviceList />
       <WeAssure />
       <SummerSale />
+      <BestSellersList />
     </div>
   );
 }

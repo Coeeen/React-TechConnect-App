@@ -4,9 +4,9 @@ import { styled } from "styled-components";
 
 function SummerSale() {
   return (
-    <SummerStyle>
+    <SummerStyle id="summerSale">
       <div>
-        <img src={SummerEarphones} alt="SummerSale" />
+        <img src={SummerEarphones} alt="summerSale" />
       </div>
       <TextSummerSale>
         <h2>Beats Studio3</h2>
@@ -23,7 +23,7 @@ function SummerSale() {
 export default SummerSale;
 
 const SummerStyle = styled.div`
-  margin-top: 30px;
+  margin-top: 100px;
   height: 65vh;
   width: 100%;
   background-color: #df3c44;
