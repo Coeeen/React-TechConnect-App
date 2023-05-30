@@ -6,6 +6,7 @@ import WeAssure from "./WeAssure";
 import SummerSale from "./SummerSale";
 import BestSellersList from "./BestSellersList";
 import NewProducts from "./NewProducts";
+import HappyHour from "./HappyHour";
 function Home() {
   return (
     <div>
@@ -15,6 +16,7 @@ function Home() {
       <WeAssure />
       <SummerSale />
       <BestSellersList />
+      <HappyHour />
       <NewProducts />
     </div>
   );

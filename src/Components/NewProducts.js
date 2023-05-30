@@ -69,6 +69,7 @@ export default NewProducts;
 const HeaderStyle = styled.h1`
   text-align: center;
   margin-top: 100px;
+  font-size: 4em;
 `;
 
 const SlideStyle = styled.div`
@@ -79,5 +80,8 @@ const SlideStyle = styled.div`
 const SlidePicture = styled.div`
   img {
     width: 300px;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;

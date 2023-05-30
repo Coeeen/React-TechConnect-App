@@ -31,7 +31,11 @@ function BestSellers() {
           img={CatHeadphones}
         />
         <BestSellerProduct prize="$1595" name="Iphone 14" img={Iphone} />
-        <BestSellerProduct prize="$250" name="Nintendo" img={monitor} />
+        <BestSellerProduct
+          prize="$250"
+          name="LG Ultragear 27GP850P"
+          img={monitor}
+        />
         <BestSellerProduct prize="$195" name="HyperX" img={HyperX} />
         <BestSellerProduct prize="$35" name="Razen pro" img={Mouse} />
         <BestSellerProduct prize="$95" name="Steelseries 5" img={Steelseries} />
