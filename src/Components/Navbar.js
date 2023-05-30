@@ -50,7 +50,6 @@ function Navbar() {
               Home
             </a>
           </li>
-          <li>Shop</li>
           <li>
             <a href="#" onClick={handleScrollToSummerSale}>
               Summer Sale
@@ -60,6 +59,11 @@ function Navbar() {
             {" "}
             <a href="#" onClick={handleScrollToPopularProducts}>
               Popular Products
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={handleScrollToNewProducts}>
+              New Products
             </a>
           </li>
         </ul>
