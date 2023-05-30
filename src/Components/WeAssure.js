@@ -41,16 +41,14 @@ function WeAssure() {
 export default WeAssure;
 
 const WeAssureStyle = styled.div`
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-top: 50px;
 `;
 const StyledObject = styled.div`
-  margin: 2% 3%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 700px;
 
   span {
     font-size: 3rem;

@@ -6,7 +6,7 @@ function SummerSale() {
   return (
     <SummerStyle id="summerSale">
       <div>
-        <img src={SummerEarphones} alt="summerSale" />
+        <img src={SummerEarphones} alt="SummerSale" />
       </div>
       <TextSummerSale>
         <h2>Beats Studio3</h2>
@@ -84,5 +84,6 @@ const SummerButton = styled.button`
   &:hover {
     box-shadow: 0px 0px 20px white;
     max-width: 300px;
+    font-size: 1.8em;
   }
 `;

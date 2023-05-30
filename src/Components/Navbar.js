@@ -4,9 +4,21 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 
 function Navbar() {
   const handleScrollToSummerSale = () => {
-    const summerSaleSection = document.getElementById("summerSale");
-    if (summerSaleSection) {
-      summerSaleSection.scrollIntoView({ behavior: "smooth" });
+    const popularSummerSaleSection = document.getElementById("summerSale");
+    if (popularSummerSaleSection) {
+      window.scrollTo({
+        top: popularSummerSaleSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleScrollToPopularProducts = () => {
+    const popularProductsSection = document.getElementById("PopularProducts");
+    if (popularProductsSection) {
+      window.scrollTo({
+        top: popularProductsSection.offsetTop,
+        behavior: "smooth",
+      });
     }
   };
 
@@ -22,7 +34,12 @@ function Navbar() {
               Summer Sale
             </a>
           </li>
-          <li>Popular Products</li>
+          <li>
+            {" "}
+            <a href="#" onClick={handleScrollToPopularProducts}>
+              Popular Products
+            </a>
+          </li>
         </ul>
       </div>
       <LoginNavbarDiv>

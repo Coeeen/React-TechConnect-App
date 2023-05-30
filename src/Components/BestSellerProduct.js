@@ -17,11 +17,17 @@ export default BestSellerProduct;
 const BestSellerProductStyle = styled.div`
   display: grid;
   flex-direction: column;
-  width: 300px;
   text-align: center;
   img {
-    width: 200px;
-    background-color: grey;
+    width: 320px;
+    cursor: pointer;
     border-radius: 2em;
+    &:hover {
+      scale: 125%;
+    }
+  }
+  h2 {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 `;
