@@ -82,6 +82,7 @@ const SlidePicture = styled.div`
     width: 300px;
     &:hover {
       transform: scale(1.1);
+      cursor: pointer;
     }
   }
 `;

@@ -47,21 +47,21 @@ const TextSummerSale = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 5em;
+    font-size: 6em;
     font-weight: 500;
     line-height: 0px;
     font-family: "Chakra Petch", sans-serif;
   }
 
   h1 {
-    font-size: 8em;
+    font-size: 10em;
     font-weight: 600;
     line-height: 100px;
     font-family: "Chakra Petch", sans-serif;
   }
 
   p {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 0px;
     font-family: "Chakra Petch", sans-serif;
   }

@@ -7,7 +7,7 @@ function HappyHour() {
   return (
     <SummerStyle id="summerSale">
       <TextSummerSale>
-        <h2>Its time to shine</h2>
+        <h2>ITS TIME TO SHINE</h2>
         <h1>Happy Hour</h1>
       </TextSummerSale>
       <ImageContainer>
@@ -40,21 +40,29 @@ const TextSummerSale = styled.div`
   text-align: center;
 
   h2 {
-    font-size: 5em;
+    font-size: 4.5em;
     font-weight: 500;
     line-height: 50px;
-
+    font-family: "Chakra Petch", sans-serif;
     @media (max-width: 768px) {
       font-size: 3em;
+    }
+    @media (max-width: 1340) {
+      font-size: 3em;
+      line-height: 10px;
     }
   }
 
   h1 {
-    font-size: 8em;
+    font-size: 9em;
     font-weight: 600;
     line-height: 100px;
+    font-family: "Chakra Petch", sans-serif;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1268px) {
+      font-size: 5em;
+    }
+    @media (max-width: 1068px) {
       font-size: 5em;
     }
   }
