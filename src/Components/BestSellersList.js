@@ -13,10 +13,10 @@ import { styled } from "styled-components";
 
 function BestSellers() {
   return (
-    <div>
+    <div id="PopularProducts">
       <BestSelletsHeader>
         <h1>Best Seller Products</h1>
-        <h2 id="PopularProducts">Also recommended by users</h2>
+        <h2>Also recommended by users</h2>
       </BestSelletsHeader>
       <BestSellersListStyle>
         <BestSellerProduct

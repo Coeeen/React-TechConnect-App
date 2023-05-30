@@ -12,11 +12,29 @@ function Navbar() {
       });
     }
   };
+  const handleScrollToHome = () => {
+    const HomeSection = document.getElementById("HomeSection");
+    if (HomeSection) {
+      window.scrollTo({
+        top: HomeSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
   const handleScrollToPopularProducts = () => {
     const popularProductsSection = document.getElementById("PopularProducts");
     if (popularProductsSection) {
       window.scrollTo({
         top: popularProductsSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+  const handleScrollToNewProducts = () => {
+    const NewProductsSection = document.getElementById("NewProducts");
+    if (NewProductsSection) {
+      window.scrollTo({
+        top: NewProductsSection.offsetTop,
         behavior: "smooth",
       });
     }
@@ -27,7 +45,11 @@ function Navbar() {
       <LogoName>TECHCONNECT</LogoName>
       <div>
         <ul>
-          <li>Home</li>
+          <li>
+            <a href="#" onClick={handleScrollToHome}>
+              Home
+            </a>
+          </li>
           <li>Shop</li>
           <li>
             <a href="#" onClick={handleScrollToSummerSale}>
@@ -71,10 +93,10 @@ const NavbarStyle = styled.div`
     &:hover {
       color: black;
     }
-
-    a {
-      text-decoration: none;
-    }
+  }
+  a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
   }
 `;
 
