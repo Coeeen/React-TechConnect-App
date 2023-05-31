@@ -27,6 +27,7 @@ function NewProducts() {
                 768: {
                   perPage: 2,
                 },
+
                 576: {
                   perPage: 1,
                 },

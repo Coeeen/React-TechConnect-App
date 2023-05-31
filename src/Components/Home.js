@@ -7,6 +7,7 @@ import SummerSale from "./SummerSale";
 import BestSellersList from "./BestSellersList";
 import NewProducts from "./NewProducts";
 import HappyHour from "./HappyHour";
+import Footer from "./Footer";
 function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ function Home() {
       <BestSellersList />
       <HappyHour />
       <NewProducts />
+      <Footer />
     </div>
   );
 }

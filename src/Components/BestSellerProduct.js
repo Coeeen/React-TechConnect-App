@@ -4,7 +4,7 @@ function BestSellerProduct(props) {
   return (
     <BestSellerProductStyle>
       <div>
-        <img src={props.img} alt="Image" />
+        <img src={props.img} alt={props.name} />
       </div>
       <h2>{props.name}</h2>
       <h2>{props.prize}</h2>
@@ -27,7 +27,7 @@ const BestSellerProductStyle = styled.div`
     }
   }
   h2 {
-    margin-top: auto;
+    margin-top: 50px;
     margin-bottom: auto;
   }
 `;
