@@ -6,7 +6,7 @@ function MainHome() {
   return (
     <MainHomeStyled>
       <InBox>
-        <h3>SKULLCAND </h3>
+        <h3>SKULLCANDY</h3>
         <h2>WIRELESS</h2>
         <h1>HEADPHONE</h1>
         <img src={Headphones2} alt="Headphones" />
@@ -20,7 +20,7 @@ export default MainHome;
 
 const MainHomeStyled = styled.div`
   margin-top: 30px;
-  height: 80vh;
+  height: 700px;
   width: 100%;
   background: linear-gradient(
     45deg,
@@ -50,21 +50,6 @@ const MainHomeStyled = styled.div`
     margin: 0px;
     z-index: 1;
     line-height: 200px;
-    @media (max-width: 1768px) {
-      font-size: 12em;
-    }
-    @media (max-width: 1568px) {
-      font-size: 10em;
-    }
-    @media (max-width: 1268px) {
-      font-size: 8em;
-    }
-    @media (max-width: 1068px) {
-      font-size: 5em;
-    }
-    @media (max-width: 500px) {
-      font-size: 3em;
-    }
   }
 
   img {
@@ -73,40 +58,30 @@ const MainHomeStyled = styled.div`
     position: absolute;
     top: 10%;
     right: 30%;
+
     @media (max-width: 1768px) {
       width: 350px;
+      top: 17%;
+      right: 33%;
+    }
+    @media (max-width: 1368px) {
+      width: 300px;
       top: 25%;
-      right: 30%;
-    }
-    @media (max-width: 1568px) {
-      width: 300px;
-      top: 35%;
-      right: 30%;
-    }
-    @media (max-width: 1268px) {
-      width: 300px;
-      top: 35%;
-      right: 30%;
+      right: 27%;
     }
     @media (max-width: 1068px) {
-      width: 300px;
-      top: 35%;
-      right: 25%;
+      width: 250px;
+      top: 30%;
+      right: 22%;
     }
-    @media (max-width: 500px) {
-      width: 150px;
-      top: 45%;
-      right: 20%;
+    @media (max-width: 868px) {
+      display: none;
     }
   }
 `;
 
 const InBox = styled.div`
   padding: 100px 0px 100px 200px;
-
-  @media (max-width: 768px) {
-    padding: 50px 20px;
-  }
 `;
 
 export const Homebutton = styled.button`
@@ -124,5 +99,10 @@ export const Homebutton = styled.button`
     background-color: white;
     color: red;
     box-shadow: 0px 0px 20px white;
+  }
+
+  @media (max-width: 768px) {
+    width: 70%;
+    margin: 5% auto;
   }
 `;

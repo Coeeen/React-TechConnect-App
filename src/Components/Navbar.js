@@ -110,7 +110,7 @@ const LogoName = styled.h1`
   letter-spacing: 8px;
   cursor: pointer;
 
-  @media (max-width: 568px) {
+  @media (max-width: 1368px) {
     font-size: 15px;
     letter-spacing: 4px;
   }
@@ -135,5 +135,9 @@ const NavbarButtons = styled.button`
 
   &:hover {
     color: black;
+  }
+  @media (max-width: 1368px) {
+    font-size: 10px;
+    margin-right: 0px;
   }
 `;

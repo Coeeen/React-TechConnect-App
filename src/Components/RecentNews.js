@@ -59,11 +59,11 @@ function RecentNews() {
 
 export default RecentNews;
 
-const HeaderStyleText = styled.h1`
+const HeaderStyleText = styled.div`
   text-align: center;
 
   h1 {
-    font-size: 2em;
+    font-size: 4em;
     line-height: 0px;
   }
 

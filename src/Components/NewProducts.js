@@ -79,6 +79,7 @@ const SlideStyle = styled.div`
   justify-content: center;
 `;
 const SlidePicture = styled.div`
+  margin-bottom: 200px;
   img {
     width: 300px;
     &:hover {
