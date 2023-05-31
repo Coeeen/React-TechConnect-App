@@ -1,5 +1,4 @@
 import React from "react";
-import SummerEarphones from "../img/SummerSale.png";
 import { styled } from "styled-components";
 import GamingWatch from "../img/GamingWatch.png";
 
@@ -20,7 +19,7 @@ function HappyHour() {
 export default HappyHour;
 
 const SummerStyle = styled.div`
-  margin-top: 150px;
+  margin: 250px 0px;
   height: 45vh;
   width: 100%;
   background-color: #41df82;
@@ -47,9 +46,9 @@ const TextSummerSale = styled.div`
     @media (max-width: 768px) {
       font-size: 3em;
     }
-    @media (max-width: 1340) {
-      font-size: 3em;
-      line-height: 10px;
+    @media (max-width: 1268px) {
+      font-size: 2.5em;
+      line-height: 50px;
     }
   }
 
@@ -59,11 +58,13 @@ const TextSummerSale = styled.div`
     line-height: 100px;
     font-family: "Chakra Petch", sans-serif;
 
-    @media (max-width: 1268px) {
-      font-size: 5em;
+    @media (max-width: 1968px) {
+      font-size: 7em;
+      line-height: 40px;
     }
-    @media (max-width: 1068px) {
+    @media (max-width: 1368px) {
       font-size: 5em;
+      line-height: 80px;
     }
   }
 `;

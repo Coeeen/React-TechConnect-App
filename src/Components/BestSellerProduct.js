@@ -27,7 +27,6 @@ const BestSellerProductStyle = styled.div`
     }
   }
   h2 {
-    margin-top: 50px;
     margin-bottom: auto;
   }
 `;
