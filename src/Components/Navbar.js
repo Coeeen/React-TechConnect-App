@@ -114,6 +114,10 @@ const LogoName = styled.h1`
     font-size: 15px;
     letter-spacing: 4px;
   }
+  @media (max-width: 867px) {
+    font-size: 10px;
+    letter-spacing: 0px;
+  }
 `;
 
 const LoginNavbarDiv = styled.div`
@@ -135,9 +139,5 @@ const NavbarButtons = styled.button`
 
   &:hover {
     color: black;
-  }
-  @media (max-width: 1368px) {
-    font-size: 10px;
-    margin-right: 0px;
   }
 `;

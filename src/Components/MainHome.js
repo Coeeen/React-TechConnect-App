@@ -50,6 +50,23 @@ const MainHomeStyled = styled.div`
     margin: 0px;
     z-index: 1;
     line-height: 200px;
+
+    @media (max-width: 1768px) {
+      font-size: 12em;
+    }
+    @media (max-width: 1368px) {
+      font-size: 10em;
+    }
+    @media (max-width: 1068px) {
+      font-size: 8em;
+    }
+    @media (max-width: 868px) {
+      font-size: 5em;
+    }
+    @media (max-width: 867px) {
+      font-size: 4.5em;
+      letter-spacing: 0px;
+    }
   }
 
   img {
@@ -64,24 +81,31 @@ const MainHomeStyled = styled.div`
       top: 17%;
       right: 33%;
     }
-    @media (max-width: 1368px) {
+    @media (max-width: 1668px) {
       width: 300px;
       top: 25%;
       right: 27%;
     }
     @media (max-width: 1068px) {
-      width: 250px;
-      top: 30%;
-      right: 22%;
-    }
-    @media (max-width: 868px) {
       display: none;
     }
+  }
+  @media (max-width: 1068px) {
+    text-align: center;
   }
 `;
 
 const InBox = styled.div`
   padding: 100px 0px 100px 200px;
+  @media (max-width: 1368px) {
+    padding: 100px 0px 100px 100px;
+  }
+  @media (max-width: 1068px) {
+    padding: 100px 0px 100px 50px;
+  }
+  @media (max-width: 868px) {
+    padding: 100px 0px 100px 0px;
+  }
 `;
 
 export const Homebutton = styled.button`
