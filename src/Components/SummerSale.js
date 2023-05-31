@@ -24,7 +24,7 @@ export default SummerSale;
 
 const SummerStyle = styled.div`
   margin-top: 100px;
-  height: 65vh;
+  height: 600px;
   width: 100%;
   background-color: #df3c44;
   display: flex;
@@ -39,6 +39,12 @@ const SummerStyle = styled.div`
     margin: 30px;
     transform: rotate(-12deg);
   }
+  @media (max-width: 1968px) {
+    img {
+      width: 90%;
+    }
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
@@ -74,29 +80,28 @@ const TextSummerSale = styled.div`
   }
   @media (max-width: 1868px) {
     h1 {
-      font-size: 9em;
+      font-size: 8em;
+      line-height: 90px;
     }
     h2 {
       font-size: 6em;
     }
     p {
       font-size: 1em;
-
-      font-family: "Chakra Petch", sans-serif;
     }
   }
-
-  @media (max-width: 1258px) {
+  @media (max-width: 1458px) {
     h1 {
-      font-size: 4em;
+      font-size: 8em;
+      line-height: 100px;
     }
     h2 {
-      font-size: 3em;
+      font-size: 4em;
+      line-height: 0px;
     }
     p {
-      font-size: 0.6em;
-
-      font-family: "Chakra Petch", sans-serif;
+      font-size: 1em;
+      line-height: 20px;
     }
   }
   @media (max-width: 768px) and (max-height: 500px) {
@@ -110,7 +115,6 @@ const TextSummerSale = styled.div`
     p {
       font-size: 0.8em;
       line-height: 0px;
-      font-family: "Chakra Petch", sans-serif;
     }
   }
 `;

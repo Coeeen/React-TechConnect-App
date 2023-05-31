@@ -19,7 +19,7 @@ function HappyHour() {
 export default HappyHour;
 
 const SummerStyle = styled.div`
-  margin: 250px 0px;
+  margin: 50px 0px;
   height: 45vh;
   width: 100%;
   background-color: #41df82;

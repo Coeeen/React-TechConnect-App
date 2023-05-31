@@ -1,6 +1,5 @@
 import React from "react";
 import BestSellerProduct from "./BestSellerProduct";
-import Earphones from "../img/Earphones.png";
 import Nintendo from "../img/Nintendo.png";
 import CatHeadphones from "../img/CatHeadphones.png";
 import Iphone from "../img/Iphone.png";
