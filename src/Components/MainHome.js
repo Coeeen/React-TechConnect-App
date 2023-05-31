@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 function MainHome() {
   return (
-    <MainHomeStyled>
+    <MainHomeStyled id="Home">
       <InBox>
         <h3>SKULLCANDY</h3>
         <h2>WIRELESS</h2>

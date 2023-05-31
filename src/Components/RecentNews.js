@@ -5,7 +5,7 @@ function RecentNews() {
   const currentDate = new Date().toLocaleDateString();
 
   return (
-    <div>
+    <div id="News">
       <HeaderStyleText>
         <h1>Recent News</h1>
         <h3>Check before buying</h3>

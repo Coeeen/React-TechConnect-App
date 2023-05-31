@@ -3,7 +3,19 @@ import styled from "styled-components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 
 function Navbar() {
-  const handleScrollToSummerSale = () => {
+  const handleScrollToHome = (e) => {
+    e.preventDefault();
+    const HomeSection = document.getElementById("Home");
+    if (HomeSection) {
+      window.scrollTo({
+        top: HomeSection.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const handleScrollToSummerSale = (e) => {
+    e.preventDefault();
     const popularSummerSaleSection = document.getElementById("summerSale");
     if (popularSummerSaleSection) {
       window.scrollTo({
@@ -12,16 +24,18 @@ function Navbar() {
       });
     }
   };
-  const handleScrollToHome = () => {
-    const HomeSection = document.getElementById("HomeSection");
-    if (HomeSection) {
+  const handleScrollToNews = (e) => {
+    e.preventDefault();
+    const NewsSection = document.getElementById("News");
+    if (NewsSection) {
       window.scrollTo({
-        top: HomeSection.offsetTop,
+        top: NewsSection.offsetTop,
         behavior: "smooth",
       });
     }
   };
-  const handleScrollToPopularProducts = () => {
+  const handleScrollToPopularProducts = (e) => {
+    e.preventDefault();
     const popularProductsSection = document.getElementById("PopularProducts");
     if (popularProductsSection) {
       window.scrollTo({
@@ -30,7 +44,8 @@ function Navbar() {
       });
     }
   };
-  const handleScrollToNewProducts = () => {
+  const handleScrollToNewProducts = (e) => {
+    e.preventDefault();
     const NewProductsSection = document.getElementById("NewProducts");
     if (NewProductsSection) {
       window.scrollTo({
@@ -42,14 +57,9 @@ function Navbar() {
 
   return (
     <NavbarStyle>
-      <LogoName>TECHCONNECT</LogoName>
+      <LogoName onClick={handleScrollToHome}>TECHCONNECT</LogoName>
       <div>
         <ul>
-          <li>
-            <a href="#" onClick={handleScrollToHome}>
-              Home
-            </a>
-          </li>
           <li>
             <a href="#" onClick={handleScrollToSummerSale}>
               Summer Sale
@@ -64,6 +74,11 @@ function Navbar() {
           <li>
             <a href="#" onClick={handleScrollToNewProducts}>
               New Products
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={handleScrollToNews}>
+              News
             </a>
           </li>
         </ul>
@@ -86,6 +101,10 @@ const NavbarStyle = styled.div`
   height: 10%;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 2;
 
   li {
     display: inline;
