@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { HiOutlineShoppingBag } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const handleScrollToHome = (e) => {
@@ -103,14 +104,14 @@ const NavbarStyle = styled.div`
   color: rgba(0, 0, 0, 0.9);
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
 
   li {
     display: inline;
     list-style: none;
     margin-right: 75px;
-    color: rgba(0, 0, 0, 0.5);
+    color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 
     &:hover {

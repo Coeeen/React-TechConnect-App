@@ -48,7 +48,7 @@ export default BestSellers;
 const BestSellersListStyle = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 100px;
+  gap: 50px;
 `;
 const BestSelletsHeader = styled.div`
   text-align: center;
