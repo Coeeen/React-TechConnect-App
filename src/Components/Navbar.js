@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { HiOutlineShoppingBag } from "react-icons/hi";
+// import { HiOutlineShoppingBag } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -85,10 +85,13 @@ function Navbar() {
         </ul>
       </div>
       <LoginNavbarDiv>
-        <NavbarButtons>Login</NavbarButtons>
-        <NavbarButtons>
+        <Link to="/Login">
+          {" "}
+          <NavbarButtons>Login</NavbarButtons>
+        </Link>
+        {/* <NavbarButtons>
           <HiOutlineShoppingBag />
-        </NavbarButtons>
+        </NavbarButtons> */}
       </LoginNavbarDiv>
     </NavbarStyle>
   );
