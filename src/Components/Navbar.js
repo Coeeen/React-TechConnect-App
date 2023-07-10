@@ -116,14 +116,13 @@ const NavbarStyle = styled.div`
     margin-right: 75px;
     color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-
-    &:hover {
-      color: black;
-    }
   }
   a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.5);
+    &:hover {
+      color: black;
+    }
   }
 `;
 

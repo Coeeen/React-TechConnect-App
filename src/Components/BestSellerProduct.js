@@ -18,6 +18,8 @@ const BestSellerProductStyle = styled.div`
   display: grid;
   flex-direction: column;
   text-align: center;
+  /* background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 2em; */
   img {
     width: 320px;
     cursor: pointer;

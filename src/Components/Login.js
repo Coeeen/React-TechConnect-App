@@ -55,7 +55,7 @@ const LoginPanelStyle = styled.div`
   border-radius: 2em;
   justify-content: center;
   text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
@@ -87,6 +87,8 @@ const LoginPanelStyle = styled.div`
     margin-left: 2em;
     text-decoration: none;
     cursor: pointer;
+    text-decoration: underline;
+    color: #6ea8e8;
   }
   p {
     margin-bottom: 10px;
@@ -131,6 +133,7 @@ const InputsStyle = styled.input`
 const LogInRightPanel = styled.div`
   background-color: #6ea8e8;
   border-radius: 0em 2em 2em 0em;
+  height: 800px;
 
   h1 {
     text-align: center;

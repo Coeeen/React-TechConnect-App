@@ -1,6 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 // import { Link } from "react-router-dom";
 function RecentNews() {
   const currentDate = new Date().toLocaleDateString();

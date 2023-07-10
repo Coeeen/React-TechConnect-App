@@ -2,10 +2,20 @@ import React from "react";
 import { TbTruckDelivery, TbCertificate } from "react-icons/tb";
 import { TfiHeadphoneAlt } from "react-icons/tfi";
 import { RiSecurePaymentFill } from "react-icons/ri";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import styled from "styled-components";
+
 function WeAssure() {
+  const [ref, inView] = useInView();
+
   return (
-    <WeAssureStyle>
+    <WeAssureStyle
+      ref={ref}
+      initial={{ opacity: 0, x: -100 }}
+      animate={{ opacity: inView ? 1 : 0, x: 0 }}
+      transition={{ duration: 1 }}
+    >
       <StyledObject>
         <span>
           <TbTruckDelivery />
@@ -40,7 +50,7 @@ function WeAssure() {
 
 export default WeAssure;
 
-const WeAssureStyle = styled.div`
+const WeAssureStyle = styled(motion.div)`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   margin-top: 50px;
