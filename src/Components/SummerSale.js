@@ -1,12 +1,21 @@
 import React from "react";
 import SummerEarphones from "../img/SummerSale.png";
 import { styled } from "styled-components";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 function SummerSale() {
+  const [ref, inView] = useInView();
   return (
     <SummerStyle id="summerSale">
       <div>
-        <img src={SummerEarphones} alt="SummerSale" />
+        <motion.img
+          src={SummerEarphones}
+          alt="SummerSale"
+          initial={{ scale: 0 }}
+          animate={{ scale: inView ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+          ref={ref}
+        />
       </div>
       <TextSummerSale>
         <h2>Beats Studio3</h2>

@@ -10,10 +10,21 @@ import StarWars from "../img/StarWars.png";
 import Oculus from "../img/Oculus.png";
 import Games from "../img/Games_.jpg";
 import Xbox from "../img/Xbox.png";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 function NewProducts() {
+  const [ref, inView] = useInView();
   return (
     <div id="NewProducts">
-      <HeaderStyle>New Products</HeaderStyle>
+      <HeaderStyle
+        initial={{ x: -100 }}
+        animate={{ x: inView ? 0 : -100 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        ref={ref}
+      >
+        New Products
+      </HeaderStyle>
       <SlidePicture>
         <SlideStyle>
           <Splide
@@ -67,7 +78,7 @@ function NewProducts() {
 
 export default NewProducts;
 
-const HeaderStyle = styled.h1`
+const HeaderStyle = styled(motion.h1)`
   text-align: center;
   margin-top: 100px;
   font-size: 4em;

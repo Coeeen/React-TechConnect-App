@@ -2,7 +2,11 @@ import React from "react";
 import { styled } from "styled-components";
 import GamingWatch from "../img/GamingWatch.png";
 
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 function HappyHour() {
+  const [ref, inView] = useInView();
+
   return (
     <SummerStyle id="summerSale">
       <TextSummerSale>
@@ -10,7 +14,14 @@ function HappyHour() {
         <h1>Happy Hour</h1>
       </TextSummerSale>
       <ImageContainer>
-        <img src={GamingWatch} alt="SummerSale" />
+        <motion.img
+          src={GamingWatch}
+          alt="SummerSale"
+          initial={{ scale: 0 }}
+          animate={{ scale: inView ? 1 : 0 }}
+          transition={{ duration: 0.5 }}
+          ref={ref}
+        />
       </ImageContainer>
     </SummerStyle>
   );

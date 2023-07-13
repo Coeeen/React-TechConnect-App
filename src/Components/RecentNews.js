@@ -6,11 +6,18 @@ import { useInView } from "react-intersection-observer";
 // import { Link } from "react-router-dom";
 function RecentNews() {
   const currentDate = new Date().toLocaleDateString();
-
+  const [ref, inView] = useInView();
   return (
     <div id="News">
       <HeaderStyleText>
-        <h1>Recent News</h1>
+        <motion.h1
+          initial={{ x: 30 }}
+          animate={{ x: inView ? 0 : 30 }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
+          ref={ref}
+        >
+          Recent News
+        </motion.h1>
         <h3>Check before buying</h3>
       </HeaderStyleText>
       <RecentNewsStyle>

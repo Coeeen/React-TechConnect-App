@@ -1,5 +1,8 @@
 import React from "react";
 import { styled } from "styled-components";
+
+import { motion } from "framer-motion";
+
 function BestSellerProduct(props) {
   return (
     <BestSellerProductStyle>
@@ -14,7 +17,7 @@ function BestSellerProduct(props) {
 
 export default BestSellerProduct;
 
-const BestSellerProductStyle = styled.div`
+const BestSellerProductStyle = styled(motion.div)`
   display: grid;
   flex-direction: column;
   text-align: center;
