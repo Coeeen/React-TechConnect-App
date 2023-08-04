@@ -21,8 +21,6 @@ Install my-project with npm
 
 ```
 
-I know that I should save the API key in the SVG file, but if I leave it, the work can be seen more quickly...
-
 _Update_ <br>
 I have deployed the project using Netlify!<br>
 U can check it here! <br>
